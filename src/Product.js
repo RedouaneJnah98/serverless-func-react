@@ -32,7 +32,7 @@ const Product = () => {
   }
 
   const { fields } = product
-  const { id, name, desc, price, image } = fields
+  const { id, name, desc, price, images } = fields
   console.log(name)
 
   return (
@@ -46,7 +46,7 @@ const Product = () => {
           <div className="title-underline"></div>
         </div>
         <article className="single-product" key={id}>
-          <img src={image[0].url} alt={name} className="single-product-img" />
+          <img src={images[0].url} alt={name} className="single-product-img" />
           <div>
             <h5>{name}</h5>
             <h5 className="price">${price}</h5>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-const url = 'https://serverless-functions-api-host.netlify.app/api/airtable'
+const url = 'http://localhost:8888/api/products'
 
 const Airtable = () => {
   const [products, setProducts] = useState([])
